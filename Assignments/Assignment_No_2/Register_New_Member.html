@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register New Member</title>
+</head>
+<body>
+    <h1>Register New Member</h1>
+    <form action="Register_New_Member.php">
+        <label for="FullName">Full Name : </label>
+        <input type="text" id="FullName" name="FName" required><br><br>
+
+        <label for="Email">Email ID : </label>
+        <input type="email" id="Email" name="email" required><br><br>
+
+        <label for="MobNo">Mobile No : </label>
+        <input type="number" id="MobNo" name="MobileNo"><br><br>
+
+        <label>Gender : </label>
+        <input type="radio" id="Male" value="male" name="gender">
+        <label for="Male">Male</label>
+
+        <input type="radio" id="Female" value="female" name="gender">
+        <label for="Female">Female</label>
+
+        <input type="radio" id="Other" value="other" name="gender">
+        <label for="Other">Other</label><br><br>
+
+        <label for="Address">Address : </label>
+        <textarea name="address" id="Address" cols="30" rows="10"></textarea><br><br>
+
+        <label for="Designation">Designation : </label>
+        <select name="selectDesignation" id="Designation">
+            <option value="SelectDesignation">Select Designation</option>
+            <option value="Principal">Principal</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Staff">Staff</option>
+        </select><br><br>
+
+        <label for="Department">Department : </label>
+        <select name="SelectDepatment" id="Department">
+            <option value="SelectDepartment">Select Department</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Science">Science</option>
+            <option value="Account">Account</option>
+        </select><br><br>
+
+        <input type="submit">
+        <input type="submit" value="Reset"> 
+    </form>  
+</body>
+</html>
