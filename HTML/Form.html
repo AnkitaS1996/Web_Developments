@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Forms</title>
+   </head>
+   <body>
+        <h1>Registeration Form</h1>
+        <form action="Data.php">
+            <label for="FirstName">First Name : </label>
+            <input type="text" name="FName" id="FirstName" value="Development"><br><br>
+            <label for="MiddleName">Middle Name : </label>
+            <input type="text" name="MName" id="MiddleName"><br><br>
+            <label for="LastName">Last Name : </label>
+            <input type="text" name="LName" id="LastName"><br><br>
+
+            <label for="PhoneNumber">Phone Number : </label>
+            <input type="number" id="PhoneNumber" name="PhNo"><br><br>
+
+            <label for="Email">Email ID : </label>
+            <input type="email" id="Email" name="email"><br><br>
+
+            <label for="State">State : </label>
+            <select name="SelectedState" id="State">
+                <option value="SelectState">Select state</option>
+                <option value="Goa">Goa</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujrat">Gujarat</option>
+                <option value="Banglore">Banglore</option>
+                <option value="UttarPradesh">Uttar Pradesh</option>
+            </select><br><br>
+
+            <label>Gender : </label><br>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" value="Male" name="gender" >
+
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" value="Female" name="gender">
+
+            <label for="other">Other</label>
+            <input type="radio" id="other" value="Other" name="gender" ><br><br>
+
+            <label>Proramming Languages : </label>
+            <label for="CProg">C</label>
+            <input type="checkbox" name="C" id="CProg" value="C Lang">
+
+            <label for="CppProg">CPP</label>
+            <input type="checkbox" name="CPP" id="CppProg" value="CPP Lang">
+
+            <label for="PythonLang">Python</label>
+            <input type="checkbox" name="Python" id="PythonLang" value="Python Lang"><br><br>
+
+            <input type="Submit">
+
+        </form>
+   </body>
+</html>
