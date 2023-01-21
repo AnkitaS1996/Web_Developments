@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            margin: 20px;
+            font-size: 35px;
+        }
+        form{
+            margin: 15px;
+
+        }
+        label,input{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact US</h1>
+
+    <form action="Contact_Us.php">
+        <label for="F_Name">First Name : </label>
+        <input type="text" id="F_Name" name="FirstName"><br><br>
+
+        <label for="M_Name">Middle Name : </label>
+        <input type="text" id="M_Name" name="FirstName"><br><br>
+
+        <label for="L_Name">Last Name : </label>
+        <input type="text" id="L_Name" name="LastName"><br><br>
+
+        <label for="Mob_No">Mobile Number : </label>
+        <input type="number" name="MobileNo" id="Mob_No"><br><br>
+
+        <label for="Address">Address : </label>
+        <textarea name="Add" id="Address" cols="30" rows="10"></textarea><br><br>
+
+        <input type="submit">
+        <input type="submit" value="Reset">
+    </form>
+    
+</body>
+</html>
