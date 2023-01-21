@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box-sizing-Image</title>
+    <style>
+        Div{
+            height: 200px;
+            width: 25%;
+            border: 1px solid red;
+            padding: 20px;
+            margin: 5px;
+        }
+        section{
+            border: 2px solid green;
+            display: flex;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="Div01">
+            <img src="../Assets/Nature_Img2.jpg" alt="Nature" height="100%" width="100%">
+        </div>
+        <div id="Div02">
+            <img src="../Assets/Nature_Img2.jpg" alt="Nature" height="100%" width="100%">
+        </div>
+        <div id="Div03">
+            <img src="../Assets/Nature_Img2.jpg" alt="Nature" height="100%" width="100%">
+        </div>
+        <div id="Div04">
+            <img src="../Assets/Nature_Img2.jpg" alt="Nature" height="100%" width="100%">
+        </div>
+    </section>
+</body>
+</html>

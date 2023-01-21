@@ -1,0 +1,11 @@
+#Para01{
+    color: green;
+}
+p{
+    color: orange;
+}
+ 
+/* CSS Specipicity File */
+div{
+    color: aqua;
+}

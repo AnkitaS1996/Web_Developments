@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        section{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            display: inline-block;
+            margin: 10px;
+        }
+        #box1{
+            background:linear-gradient(rgba(5, 3, 8, 0),rgba(145, 44, 103, 0.8)),url('../Assets/Nature_Img2.jpg');
+            background: repeating-linear-gradient();
+            background-size: 200px;
+        }
+        #box2{
+            background:linear-gradient(to top, rgba(255, 0, 0, 0),rgba(255, 0, 0, 0.8));
+            background: repeating-linear-gradient();
+            background-size: 200px;
+        }
+        #box3{
+            background:linear-gradient(to right, rgba(107, 8, 200, 0),rgba(107, 8, 200, 0.8));
+            background: repeating-linear-gradient();
+            background-size: 200px;
+        }
+        #box4{
+            background:linear-gradient(to bottom, rgba(8, 142, 200, 0),rgba(8, 142, 200, 0.8));
+            background: repeating-linear-gradient();
+            background-size: 200px;
+        }
+        #box5{
+            background:linear-gradient(to left, rgba(8, 200, 37, 0),rgba(145, 44, 103, 0.8));
+            background: repeating-linear-gradient();
+            background-size: 200px;
+        }
+        /*
+            background:linear-gradient(direction,color-stop,color-stop,....,color-stop);
+            0 - to top
+            90 - to right
+            180 - to bottom
+            270 - to left 
+        */
+    </style>
+</head>
+<body>
+    <section id="box1">
+
+    </section>
+   <section id="box2"></section>
+   <section id="box3"></section>
+   <section id="box4"></section>
+   <section id="box5"></section>
+</body>
+</html>
