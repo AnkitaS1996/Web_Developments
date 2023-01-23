@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment05_Example03_Webpage_Layout02</title>
+    <style>
+        /*body bar Code Start*/
+        body{
+            margin: 0px;
+            background-color:blue;
+        }
+
+        /*navigartion bar Code Start*/
+        nav>div{
+            display: inline-block;
+            height: 30px;
+        }
+        .ancher{
+            padding: 10px;
+        }
+        nav{
+            background-color:navy;
+            padding: 20px;
+            height: 60px;
+        }
+        div>a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 2px 10px;
+            color: white;
+        }
+        a:active{
+            background-color:green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #LogoImg{
+            height: 100%;
+            background-color :blue;
+            margin-left: 750px;
+        }
+        #Logo{
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+        }
+
+        /*Container Code Start */
+        #Container{
+            border: 1px solid;
+        }
+        #Container>div{
+            display: inline-block;
+        }
+        #Container>#Aside{
+            width: 33.35%;
+            background-color: blueviolet;
+            position: relative;
+            top: 0px;  
+        }
+        #Container>#Main{
+            width: 66%;
+            background-color: blue;
+        }
+        .Image1{
+            height: 400px;
+            width: 32%;
+            padding: 10px;
+            margin: 20px;
+        }
+        img{
+            text-align: center;
+        }
+        .Description>p{
+            margin: 10px;
+            padding: 10px;
+            margin-bottom: 0px;
+            border-bottom: 1px solid;
+            color: white;
+        }
+    
+        /*Main code Start*/
+        main{
+            padding: 10px;
+            margin-bottom: -100%;
+
+        }
+        .Image2{
+            margin: 10px 50px 20px 50px;
+            height: 400px;
+            width: 60%;
+            padding: px;
+            background-color: #aaa;
+        }   
+        #Heading{
+            text-align: center;
+        }
+        .Container{
+            margin:10px 10px 5px 10px;
+            background-color: navy;
+            border: 1px solid white;
+            color: white;
+        }
+        .Container>div{
+            display: inline-block;
+        }
+        .Date{
+            padding: 20px;
+           background-color: rgb(72, 30, 100);
+           color: white;
+        }
+        .Description{
+            padding: 20px;
+            margin-left: 100px;
+        }
+        footer{
+            background-color: navy;
+            border: 1px solid;
+            padding: 10px;
+            color: white;
+        }      
+    </style>
+</head>
+<body>
+        <nav>
+            <div class="ancher"><a href="#">Home</a></div>
+            <div class="ancher"><a href="#">About</a></div>
+            <div class="ancher"><a href="#">Carrer</a></div>
+            <div class="ancher"><a href="#">Contact Us</a></div>
+            <div id="LogoImg">
+                <div id="Logo">Place Here Logo</div>
+            </div> 
+        </nav>
+        <div id="Container">
+            <div id="Aside">
+                <table>
+                    <tr>
+                        <td class="Image1">
+                            <img src="../Img1_Instagram.jfif" alt="Instagram" height="100%" width="100%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Main">
+                <table>
+                    <tr style="text-align: center;">
+                        <td class="Image2">
+                            <img src="../../Assets/Img6_Laptop.png" alt="Laptop" height="100%" width="100%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Heading">
+                            <h3>Tag Line Of steve Job</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Container">
+                                <div class="Date">Title Name 01</div>
+                                <div class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Container">
+                                <div class="Date">Title Name 02</div>
+                                <div class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Container">
+                                <div class="Date">Title Name 03</div>
+                                <div class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Container">
+                                <div class="Date">Title Name 04</div>
+                                <div class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+             <h3>Ankita Nivas Shedage</h3>
+             <h3>A/p - Karad ,Tal - Karad,Dist - Satara</h3>
+             <h3>9865327458</h3>
+        </footer>
+</body>
+</html>
