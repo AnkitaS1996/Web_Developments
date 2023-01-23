@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment06-Website Design</title>
+    <style>
+        /*Body Code start*/
+        *{
+             box-sizing: border-box; 
+        }
+        body{
+            margin: 0px;
+        }
+
+        /* Header Code start */
+        header{
+            border-bottom: 1px solid blue;
+            margin: 0px 2px;
+            /* padding: 5px; */
+        }
+        .Image01{
+            text-align: center;
+            height: 30px;
+            width: 80%;
+        }
+        .Anchor{
+            margin: 0px 20px;
+            padding: 0px 20px ;
+        }
+        
+        /*Slider Code start*/
+        #Slider{
+            margin: 5px 23px;
+        }
+        .Table01,.Row01,.Box01,#Box02{
+            border: 2px dotted red;
+            border-collapse: collapse;
+            height: 200px;
+        }
+        .Box01{
+            width: 300px;
+        }
+        #Box02{
+            width: 900px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .text01{
+            font-weight: bold;
+        }
+        #text02{
+            text-transform: uppercase;
+        }
+
+        /* Main Content Design Code */
+        .Main{
+            text-align: center;
+            margin: 0% 12%;
+        }
+        .Data01{
+            border: 1px solid red;
+            height:70px;
+            width:250px;
+        }
+        .Data01>img{
+            height:100%;
+            /* width:50%; */
+            text-align: center;
+        }
+
+        /* Container Code Start */
+       .Product01,.Table03,.Row03,.Data02,.Data03{
+            border: 1px solid;
+        } 
+        #Container{
+            margin: 15px;
+            padding: 10px;
+            /* border: 1px solid; */
+        }
+        #Container>div{
+            display: inline-block;
+        }
+        .Product01{
+            width: 81%;
+        }
+        .Data03>img{
+            height:60px; 
+            width:100px;
+        }
+        .Product02{
+            width: 19%;
+           position: absolute;
+           margin: 0px 10px;
+        }
+        .Data04>img{
+            height: 100%;
+        }
+        .Data04{
+            border: 3px dotted black;
+            border-radius: 50px;
+            text-align: center;
+            height: 100px;
+            width: 250px;
+        }   
+    </style>
+</head>
+<body>
+    <!--Header Design-->
+    <header>
+        <table>
+            <tr>
+                <td class="Anchor">
+                    <a href="#">Home</a>
+                </td>
+                <td class="Anchor">
+                    <a href="#">Course</a>
+                </td>
+                <td class="Image01">
+                    <img src="../../Assets/WEBx86_Logo_Rectangle.jpg" alt="WebX86" height="60px" width="150px">
+                </td>
+                <td class="Anchor">
+                    <a href="#">About</a>
+                </td>
+                <td class="Anchor">
+                    <a href="#">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Slider Image-->
+    <div id="Slider">
+       <table class="Table01">
+        <tr class="Row01">
+            <td class="Box01"></td>
+            <td id="Box02">
+                <p class="text01">WEBx86</p>
+                <p id="text02">Infotech</p>
+            </td>
+            <td class="Box01"></td>
+        </tr>
+       </table>
+    </div>
+
+    <!-- Main Content --> 
+    <div class="Main">
+        <table class="Table02">
+            <tr class="Row02">
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td colspan="3">
+
+                </td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+            </tr>
+            <tr class="Row02">
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td colspan="3"> </td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+            </tr>
+            <tr class="Row02">
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td></td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td></td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+            </tr>
+            <tr class="Row02">
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td></td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+            </tr>
+            <tr class="Row02">
+                <td class="Data01"> 
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="Data01">
+                    <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Container Code Start -->
+    <div id="Container">
+        <div class="Product01">
+            <table class="Table03">
+                <tr class="Row03">
+                    <td class="Data02">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nihil provident sed, commodi dignissimos consequatur soluta possimus? Amet aut eaque consectetur dolore sapiente sequi hic rem accusamus et! Magnam, sapiente?
+                    </td>
+                    <td class="Data03">
+                        <img src="../../Assets/WEBx86_Logo_Rectangle.jpg" alt="WebX86">
+                    </td>
+                </tr>
+                <tr class="Row03">
+                    <td class="Data02">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ea necessitatibus doloribus, quasi possimus, illum ullam aut sapiente totam exercitationem vitae? Aspernatur architecto hic voluptate blanditiis corrupti assumenda dolor veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td class="Data03">
+                        <img src="../../Assets/WEBx86_Logo_Rectangle.jpg" alt="WebX86">
+                    </td>
+                </tr>
+                <tr class="Row03">
+                    <td class="Data02">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum, accusantium quo dignissimos impedit cum nostrum quos quam ex nobis magni reprehenderit, itaque ipsum similique asperiores vel ipsa. Animi, voluptate!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi cupiditate ipsum voluptas, optio officiis sunt labore voluptate rerum, quis doloremque expedita repellat quas consequuntur tempore, in assumenda asperiores. Iusto.
+                    </td>
+                    <td class="Data03">
+                        <img src="../../Assets/WEBx86_Logo_Rectangle.jpg" alt="WebX86">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Product02">
+            <table class="Table04">
+                <tr class="Row03">
+                    <td class="Data04">
+                        <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Data04">
+                        <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
