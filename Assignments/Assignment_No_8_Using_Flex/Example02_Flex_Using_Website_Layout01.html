@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example02 Flex Website Layout</title>
+    <style>
+        /*body Code Start*/
+        body{
+            margin: 0px;
+        }
+
+        /*header Code Start*/
+        header{
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            color: white;
+            font-size: 35px;
+            text-transform: uppercase; 
+        }
+
+         /*navigartion bar Code Start*/
+         nav{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: black;
+            padding: 20px;
+        }
+        div>a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 2px 10px;
+            color: white;
+        }
+        a:hover{
+            background-color:green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+         /*Container Code Start*/
+         #container{
+            /* border: 2px solid brown; */
+            padding: 5px;
+            display: flex;  
+        }
+        #container>div{
+            flex-grow: 1;
+            margin: 0px 2px;
+            /* border: 1px solid blue; */
+            height: 500px;
+        }
+
+        /*Container1 Code Start*/
+        #container1{
+            border: 1px solid black;
+            display: flex;
+            padding:5px;
+            height: 330px;
+        }
+        #container1>div{
+             /* border: 2px solid yellowgreen; */
+            margin: 2px;
+        }
+        #Main{
+            flex: 2;
+        }
+        #Aside{
+            flex: 3;
+        }
+        .contain1{
+            /* border: 1px solid blueviolet; */
+            display: flex;
+            padding: 5px;
+            
+            height: 13vh;
+            /* margin: 7px 0px;  */
+        }
+        .Name{
+            flex: 1;
+            font-size: 20px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        .Description{
+            flex: 3;
+            text-align: left;
+            background-color: #ccc;
+        }
+        .Description>p{
+            margin-left: 5px;
+        } 
+
+        /*footer Code Start*/
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(255, 127, 138);
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Code Start -->
+    <header>
+        <p>WebX86</p>
+    </header>
+
+    <!-- Navbar Code start -->
+    <nav>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">About</a></div>
+        <div><a href="#">Contact Us</a></div>
+        <div><a href="#">Help</a></div>
+    </nav>
+
+    <!-- Container Code start -->
+    <section id="container">
+        <div>
+            <img src="../../Assets/Img1_Instagram.jfif" alt="Instagram"  width="100%" height="100%">
+        </div>
+        <div>
+            <img src="../../Assets/Img3_WhatsApp.png" alt="whatsapp" width="100%" height="100%">
+        </div>
+    </section>
+
+    <!-- Container1 Code start -->
+    <section id="container1">
+        <div id="Main"> 
+            <img src="../../Assets/User.png" alt="User" height="100%"  width="100%">
+        </div>
+        <div id="Aside">
+            <div class="contain1">
+                <div class="Name">
+                    <p>HTML</p>
+                </div>
+                <div class="Description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consectetur consequuntur. Id nemo maiores cum saepe placeat.
+                    </p>
+                </div>
+            </div>
+            <div class="contain1">
+                <div class="Name">
+                    <p>CSS</p>
+                </div>
+                <div class="Description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rerum vero. Ullam vel quos fugit quasi amet nemo odit perferendis provident ex molestias architecto doloribus eos, praesentium laudantium omnis dolore!
+                    </p>
+                </div>
+            </div>
+            <div class="contain1">
+                <div class="Name">
+                    <p>JS</p>
+                </div>
+                <div class="Description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Footer Copyright@2023</p>
+    </footer>
+</body>
+</html>
