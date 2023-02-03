@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example03 Flex Layout 03</title>
+    <style>
+         /* Body Code Start */
+         body{
+            margin: 0px;
+        }
+        
+        /* Header Code Start */
+        header{
+            background-color: rgb(19, 15, 15);
+            color: white;
+            padding: 50px;
+            text-align: right;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+       
+        #Logo{
+            font-size: 50px;
+            margin-right: 450px;
+            text-align: left;
+            color: white;
+        }  
+        #Link{
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+      
+        #Link>#Text01{
+            margin-right: 200px;
+            font-size: 25px;
+            padding: 5px;    
+        }
+        #Link>.Anchor>a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            margin: 10px 32px 0px;
+        }
+        #Link>.Anchor>a:hover{
+            background-color: brown;
+            border-radius: 10px;
+            height: 20px;  
+        }
+        .Text02{
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            margin: 40px 220px 30px 200px;
+            text-align: left;
+        }
+        header>.Btn>button{
+            margin-right: 550px;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: #ccc;
+            width: 400px;
+            padding: 20px;
+        }
+        header>.Btn>button:hover{
+            background-color: brown;
+            border-radius: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <section>
+        <!-- HTML Header Code Start -->
+        <header>
+            <div id="Logo">
+               Styles<br>Conference
+            </div>
+            <div id="Link">
+                 <div id="Text01">Conference Date and Time ,Venue</div> 
+                 <br><br> 
+                <div class="Anchor"><a href="#">Home</a></div>
+                <div class="Anchor"><a href="#">About Us</a></div>
+                <div class="Anchor"><a href="#">Carrer</a></div>
+                <div class="Anchor"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="Text02">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia quos nulla totam voluptatem maxime illo, ullam architecto culpa praesentium dignissimos 
+                facilis non corrupti ducimus deleniti consequatur dolores ut molestias minima!
+            </div>
+            <div class="Btn">
+                <button>Register Now</button>
+            </div>
+        </header>
+
+   </section>
+</body>
+</html>
