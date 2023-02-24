@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_Example_02</title>
+    <style>
+        /* Body Code Start */
+        body{
+            margin: 0px;
+        }
+        /* Items Code Start */
+        #Items{
+            border: 1px solid red;
+            display: flex;
+
+        }
+        .Box01{
+            background-color: aqua;
+            border: 1px dotted;
+            flex-grow: 1;
+        }
+        .Box02{
+            padding: 100px;
+            flex-grow: 2;
+            border: 1px dotted;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        /*Main Code Start*/
+       img{
+        text-align: center;
+        height: 100%;
+       }
+       .Row{
+         display: flex;
+         margin: 5px 150px 5px 200px; 
+       }
+       .Row>div{
+        height: 70px;
+        width: 200px; 
+        margin:  5px;
+        text-align: center;
+       }
+       .Row>.Col{
+        border: 1px solid;
+       }
+    
+    </style>
+</head>
+<body>
+    <div id="Items">
+        <div class="Box01"></div>
+        <div class="Box02"> 
+            <p>WebX86 <br> Infotech</p> 
+        </div>
+        <div class="Box01"></div>
+    </div>
+    <!-- Main Part Code Start -->
+    <div id="Main">
+        <div class="Row">
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div></div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div> </div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div></div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div class="Col">
+                <img src="../../Assets/WEBx86_Logo_Circle.png" alt="WebX86">
+            </div>
+        </div>
+
+    </div>    
+    
+</body>
+</html>

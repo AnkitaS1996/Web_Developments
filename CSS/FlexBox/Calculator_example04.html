@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .Container{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 1 60%;
+            min-width: 400px;
+        }
+        .Buttons,.Result{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 1 100%;
+        }
+        .Result{
+            height: 50px;
+            border: 1px solid black;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            padding: 0px 10px;
+        }
+        .Button{
+            display: flex;
+            flex: 0 1 25%;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid black;
+            border-top: none;
+            /* border-left: none; */
+            background: linear-gradient(top,#d2d2d2,#ddd);
+            font-size: 25px;
+        }
+        /* .Button:nth-child(4n-1){
+             border-left: 1px solid black; 
+        }  */
+        /* .Button:nth-child(4n),.Button:last-child{
+            background-color: orangered;
+            color: white;
+        } */
+        .Operator{
+            background-color: orangered;
+            color: white;
+        }
+        .ZeroBtn{
+            flex-grow: 2;
+        }
+        button{
+            flex-grow: 1;
+            height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        button:active{
+            border-radius: 10px;
+            background-color: brown;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Result">0</div>
+        <div class="Buttons">
+            <span class="Button"><button>AC</button></span>
+            <span class="Button"> <button>+/-</button></span>
+            <span class="Button"><button>%</button></span>
+            <span class="Button"><button class="Operator">/</button></span>
+            <span class="Button"><button>7</button></span>
+            <span class="Button"><button>8</button></span>
+            <span class="Button"><button>9</button></span>
+            <span class="Button"><button class="Operator">*</button></span>
+            <span class="Button"><button>4</button></span>
+            <span class="Button"><button>5</button></span>
+            <span class="Button"><button>6</button></span>
+            <span class="Button"><button class="Operator">-</button></span>
+            <span class="Button"><button>1</button></span>
+            <span class="Button"><button>2</button></span>
+            <span class="Button"><button>3</button></span>
+            <span class="Button"><button class="Operator">+</button></span>
+            <span class="Button ZeroBtn"><button>0</button></span>
+            <span class="Button"><button>.</button></span>
+            <span class="Button"><button class="Operator">=</button></span>
+        </div>
+    </div>
+</body>
+</html>
