@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example03 Flex Layout 03</title>
+    <style>
+         /* Body Code Start */
+         body{
+            margin: 0px;
+        }
+        
+        /* Header Code Start */
+        header{
+            background-color: rgb(19, 15, 15);
+            color: white;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+       
+        #Logo{
+            margin: 50px 10px 50px 150px;
+            font-size: 60px;            
+        } 
+        #Text01{
+            text-align: left;
+            margin: 0px 0px 0px 60px;
+        }
+        .Anchor{
+            margin: 10px 20px 0px;
+        }
+        #Link{
+            margin: 90px 0px;
+            font-size: 22px;
+        }
+        #Link>.Anchor>a{
+            text-decoration: none;
+            color: white;
+            margin: 0px 30px 0px;
+            padding: 10px;
+        }
+        #Link>.Anchor>a:hover{
+            background-color: brown;
+            border-radius: 10px;
+            /* height: 20px;   */
+            padding: 10px;
+        }
+        .Text02{
+            grid-area: 2/1/3/3;
+            margin: 0px 300px 0px;
+            font-size: 20px;
+        }
+        .Btn{
+            grid-area: 3/1/3/3;
+            text-align: center;
+        }
+        button{
+            font-size: 25px;
+            width: 300px;
+            padding: 20px;
+            margin: 40px 0px;
+            border-radius: 10px;
+        }
+
+        /* Main Container Code start */
+        #Main{
+            align-items: center;
+        }
+        #Container{
+            display: flex;
+            justify-content:flex-start ;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 230px;
+        }
+        #Main>#Container>div{
+            flex: 1;
+            margin: 10px;
+            /* border: 1px solid; */
+        }
+        .Title>p{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .Image01{
+            background-color: #ccc;
+            height: 200px;
+            flex: 1;
+        }
+        img{
+            height: 99%;
+            width: 99%;
+        }
+
+        /* Footer Code Start */
+        footer{
+            background-color: rgb(19, 15, 15);
+            text-align: right;
+            padding: 20px;
+        }
+        #FText01{
+            margin: 5px 70px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #Round{
+            border: 1px solid black;
+            height: 10px;
+            /* width: 10px; */
+            padding: 10px;
+            border-radius: 50%;
+            background-color:black;
+            color: white;
+            margin: 20px 10px 20px 0px;
+        }
+        #Logo01{
+            margin-right: 600px;
+            font-size: 25px;
+            color: white;
+        }
+        footer>div>div{
+            padding: 20px; 
+        }
+        footer>div>div>a{
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }    
+    </style>
+</head>
+<body>
+   <section>
+        <!-- HTML Header Code Start -->
+        <header>
+            <div id="Logo">
+               Styles<br>Conference
+            </div>
+            <div id="Link">
+                <div id="Text01">Conference Date and Time ,Venue</div> <br>
+                <div class="Anchor">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Carrer</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <!-- <div class="Anchor"><a href="#">About Us</a></div>
+                <div class="Anchor"><a href="#">Carrer</a></div>
+                <div class="Anchor"><a href="#">Contact Us</a></div>  -->
+            </div>   
+            <div class="Text02">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia quos nulla totam voluptatem maxime illo, ullam architecto culpa praesentium dignissimos 
+                facilis non corrupti ducimus deleniti consequatur dolores ut molestias minima!
+            </div>
+            <div class="Btn">
+                <button>Register Now</button>
+            </div>
+        </header>
+
+         <!-- Main Content Code Starts -->
+         <div id="Main">
+            <div id="Container">
+                <div class="items">
+                    <div class="Title">
+                        <p>Speakers</p>
+                    </div>
+                    <div class="Image01">
+                        <img src="../../Assets/HTML.png" alt="HTML">
+                    </div>
+                    <div class="Text03">
+                        <h2>World Class Speakers</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, placeat tempora! Consequuntur dolore ipsa repellendus! Dolorem iste, quibusdam id voluptates, esse cupiditate soluta molestias ipsa quisquam odio iusto obcaecati nisi.
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="Title">
+                        <p>Schedule</p>
+                    </div>
+                    <div class="Image01">
+                        <img src="../../Assets/CSS.png" alt="CSS">
+                    </div>
+                    <div class="Text03">
+                        <h2>Three Inspiring Days</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto earum ut, itaque officiis facere eaque quas id maxime esse sequi fuga voluptatibus sit repudiandae quisquam debitis minima dignissimos nesciunt!
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="Title">
+                        <p>Venus</p>
+                    </div>
+                    <div class="Image01">
+                        <img src="../../Assets/Javascript.png" alt="JS">
+                    </div>
+                    <div class="Text03">
+                        <h2>The Venus</h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto reprehenderit vero corporis sit et aspernatur ad illo alias eveniet minus. Necessitatibus cum ab asperiores sapiente quaerat exercitationem est dolorum minima!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Code Start -->
+        <footer>
+            <div id="FText01">
+                <div id="Round">C</div>
+                <div id="Logo01">Styles Conference</div>
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <a href="#">About</a>
+                </div>
+                <div>
+                    <a href="#">Carrer</a>
+                </div>
+                <div>
+                    <a href="#">ContactUS</a>
+                </div>
+            </div>
+            
+        </footer>
+
+   </section>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example02 Flex Layout02</title>
+    <style>
+         /* Body Code Start */
+         body{
+            margin: 0px;
+            background-color: rgb(75, 69, 69);
+        }
+        section{
+            border: 1px solid red;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        /* Header Code Start */
+        header{
+            margin: 5px 22px 0px 22px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header>div{
+            text-align: center;
+            flex: 1;
+            border: 1px solid;
+            background-color: #ccc;
+            margin: 10px 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+         /* Container Code Start */
+         #Container{
+           margin: 0px 35px 0px 18px;
+           display: flex;
+        }
+        .Image01{
+             height: 410px;
+            /* width: 970px;*/
+            flex: 2;
+            padding: 15px;
+        }
+        #Box{
+            flex: 1;
+        }
+        #Box>.Box01{
+            height: 192px;
+            flex: 1;
+            background-color: #ccc;
+            text-align: center;
+        }
+        .Box01>p{
+           padding: 50px;
+           font-size: 20px;
+        }
+
+        /* Box2 Code Start */
+        #Box02{
+            margin: 0px 25px 0px 31px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .Box03{
+            margin: 10px 10px 0px 0px;
+            flex: 1;
+            height: 150px;
+            background-color: #ccc;
+            border: 1px solid;
+        }
+        .Box03>h1{
+            text-align: center;
+        }
+        .Box03>p{
+            margin: 0px 5px;
+        }
+
+         /* Container02 Code Start */
+         #Container02{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 36px 0px 30px;
+            background-color: #ccc;
+        }
+        #Image02{
+            height: 350px;
+            flex: 1;
+        }
+        #Image02>img{
+            margin: 20px 10px 20px 10px;
+        }
+        .Box04{
+            margin: 20px 5px 20px 25px;
+            flex: 1;
+            height: 350px;
+        }
+        .Text01{
+            margin: 10% 0%; 
+        }
+        .Text01,p,Button{
+            font-size: 20px;
+        }
+        .Text01>button{
+            background-color: gray;
+            width: 200px;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+       /*Instant Game Code start*/
+       #Game{
+            margin: 20px 40px 0px 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #Game>div{
+            height: 12px;
+            flex: 1;
+            text-align: center;
+            background-color: black;
+            font-size: larger;
+        }
+
+        /* Instant Game Block Code Start */
+        #Image03{
+            margin: 20px 49px 0px 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+     
+        .Image04{
+            height: 220px;
+            width: 430px;
+            /* flex: 1; */
+            margin: 0px 10px 10px 0px;
+        }
+
+         /* Footer Code start */
+         footer{
+            background-color: #ccc;
+            border:1px solid;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer>div{
+            height: 100px;
+            flex: 1;
+            /* width: 500px; */
+            /* margin: 10px; */
+        }
+        .Box02{
+             margin: 10px 20px 5px 90px;
+             display: flex;
+             /* flex-wrap: wrap; */
+             flex-direction: column;
+        }
+        footer>.Box02>a{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            margin: 0px 50px 0px;
+        }
+        #LogoImage{
+            margin: 10px 500px;
+            height: 120px;
+            flex: 1;
+        }    
+    </style>
+</head>
+<body>
+    <section>
+        <!-- Header Section code Start -->
+        <header>
+            <div>Tocos</div>
+            <div>Beers</div>
+            <div>Winers</div>
+            <div>Deserts</div>
+            <div>Reservations</div>
+        </header>
+
+         <!-- Container Code Start -->
+         <div id="Container">
+            <div class="Image01">
+                <img src="../../Assets/Food_Img1.jpg" alt="FoodImg01">
+            </div>
+            <div id="Box">
+                <div class="Box01">
+                    <p >$1.99 <br> Tacos</p>
+                </div>
+                <div class="Box01">
+                    <p>$1.99<br> Beers</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Box02 Code Start -->
+         <div id="Box02">
+            <div class="Box03">
+                <h1>Tacos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Box03">
+                <h1>Beers</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Box03">
+                <h1>Wines</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Box03">
+                <h1>Deserts</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Box03">
+                <h1>Reservations</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+         <!-- Container02 Code Start  -->
+         <div id="Container02">
+            <div id="Image02">
+                <img src="../../Assets/Food_Img2.jfif" alt="FoodImg02" >
+            </div>
+            <div class="Box04">
+                <div class="Text01">
+                    <h2>Hedline</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur optio omnis unde laudantium quam architecto, ullam adipisci aspernatur modi eligendi veniam iusto magnam dicta fuga placeat, odio doloribus repellat.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instant Game Code start -->
+        <div id="Game">
+            <div></div>
+            <div id="name" style="background-color: rgb(75, 69, 69); font-size: 25px;"><b>Instant Games</b></div>
+            <div></div>
+        </div>
+
+        <!-- Game Block Code Start -->
+        <div id="Image03">
+            <div class="Image04">
+                <img src="../../Assets/Food_Img1.jpg" alt="FoodImg01">
+            </div>
+            <div class="Image04">
+                <img src="../../Assets/Food_Img2.jfif" alt="FoodImg02">
+            </div>
+            <div class="Image04">
+                <img src="../../Assets/Food_Img3.jfif" alt="FoodImg03">
+            </div>
+            <div class="Image04 Image05">
+                <img src="../../Assets/Food_Img4.jfif" alt="FoodImg04">
+            </div>
+            <div class="Image04 Image05">
+                <img src="../../Assets/Food_Img5.jfif" alt="FoodImg05">
+            </div>
+        </div>
+
+         <!-- Footer Code start -->
+         <footer>
+            <div class="Box02">
+                <a href="#">Tacos</a>
+                <a href="#">Beers</a>
+                <a href="#">Wines</a>
+                <a href="#">Deserts</a>
+            </div>
+            <div id="LogoImage">
+                <img src="../../Assets/WEBx86_Logo_Rectangle.jpg" alt="WebX86">
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
