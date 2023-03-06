@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+header>p{
+    color: white;
+    font-size: 35px;
+}
+.row{
+    padding:10px 30px;
+}
+.Container{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px;
+}
+label{
+    margin: 0px 5px;
+}
+.lbl_Text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+button{
+    padding: 20px;
+}
+.Submit{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#btn_Submit{
+   width: 200px;
+   font-size: 30px;
+}
