@@ -15,29 +15,29 @@
         <p>Registeration Form</p>
     </header>
     <section class="Container">
-    <form action="" >
+    <form action="" method="post" onsubmit="ValidationData()" name="StudentInformation">
         <div class="row">
             <div class="row">
                 <div class="col-md-6">
                     <label for="Name" class="form-label lbl_Text">Full Name </label>
-                    <input type="text" class="form-control" id="Name" value="FName" >
+                    <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Full Name">
                     <label for="Msg_Error_MsgName"></label>
                 </div>
                 <div class="col-md-6">
                     <label for="Email" class="form-label lbl_Text">Email </label>
-                    <input type="text" class="form-control" id="email" value="email">
+                    <input type="text" class="form-control" id="email" name="Email" placeholder="Enter Email">
                     <label for="Msg_Error_Msgemail"></label>
                 </div>
             </div><br><br>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="MNO" class="form-label lbl_Text">Mobile Number </label>
-                    <input type="text" class="form-control" id="MNO" value="MobileNo">
+                    <label for="MobileNo" class="form-label lbl_Text">Mobile Number </label>
+                    <input type="text" class="form-control" id="MNO" name="MobileNo" placeholder="Enter Mobile Number">
                     <label for="Msg_Error_MNO"></label>
                 </div>
                 <div class="col-md-6">
                     <label for="State" class="form-label lbl_Text">State </label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" name="State">
                         <option selected>Select State</option>
                         <option value="Maharashtra">Maharashtra</option>
                         <option value="Gujarat">Gujarat</option>
@@ -98,7 +98,36 @@
 </section>
 
 <script>
-    
+    debugger;
+    function ValidationData()
+    {
+        debugger;
+        var Name = document.StudentInformation.Name.value;
+        var Email = document.StudentInformation.Email.value;
+        var MNo = document.StudentInformation.MobileNo.value;
+        var State = document.StudentInformation.State.value;
+        var Gender = document.StudentInformation.gender.value;
+
+        var SelectLanguage = [];
+
+        var SelectCheckboxLanguage = document.getElementsByName('Languages');
+
+        for(var i = 0;i < SelectCheckboxLanguage.length;i++)
+        {
+            if(SelectCheckboxLanguage[i].checked)
+            {
+                SelectLanguage.push(SelectCheckboxLanguage[i].value);
+            }
+        }
+
+        console.log(Name);
+        console.log(Email);
+        console.log(MNo);
+        console.log(State);
+        console.log(Gender);
+        console.log(SelectLanguage);
+
+    }
 </script>
 </body>
 </html>
